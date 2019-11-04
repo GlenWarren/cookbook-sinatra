@@ -1,0 +1,14 @@
+Your Recipes:
+<br><br>
+<% @recipes.each_with_index do |rec, ind| %>
+<%= rec.name %>
+<br>
+<%= rec.description %>
+<br>
+<%= rec.prep_time %>
+<br>
+<a href="/recipes/<%= ind %>">Delete</a>
+<br><br>
+<% end %>
+
+<a href="/new">Create a new recipe</a>
